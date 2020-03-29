@@ -604,7 +604,7 @@ height: 2px;
     display: none!important;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 40em) {
     .section1 {
         display: block;
     }
