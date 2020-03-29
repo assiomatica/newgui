@@ -14,22 +14,10 @@
     padding: 0px;
 }
 
-
-/*
-
-*/
-
 div.button-bar {
     width: 190px !important;
     margin: 0 auto;
 }
-
-
-/*
-.bar-grey {
-background-color: #444;
-
-}*/
 
 .bar.bar-grey {
     border-color: #262626;
@@ -66,13 +54,6 @@ background-color: #444;
 .button.button-icon:before {
     font-size: 75px!important;
 }
-
-
-/*
-.bar .button.button-icon, .bar button.button-icon  {
-  height: 75px!important;
-}
-*/
 
 .bar-footer .title {
     height: 74px!important;
@@ -385,17 +366,6 @@ h2 {
     background: black;
 }
 
-
-/* width: 60%; */
-
-
-/* margin-top: 20px; */
-
-
-/* margin-bottom: 34px; */
-
-background: black;
-height: 2px;
 .bar .button,
 .bar button {
     padding: 0!important;
@@ -441,6 +411,7 @@ height: 2px;
 }
 
 .section1 {
+    margin-top: 80px;
     display: flex;
     display: -webkit-box;
     _flex-direction: row;
@@ -567,38 +538,6 @@ height: 2px;
         _flex-basis: 100%;
     }
 }
-
-
-/*
-
-@media(max-width: 815px) {
-  .grid-item {
-      flex-basis: 50%;
-  }
-}
-
-  @media(max-width: 1333px) {
-    .grid-item {
-      text-align:center;
-    }
-  }
-  @media(max-width: 1073px) {
-     .grid-item {
-      _flex-basis: 33.33%;
-    }
-  }
-
-  @media(max-width: 815px) {
-    .grid-item {
-      flex-basis: 50%;
-    }
-  }
-  @media(max-width: 555px) {
-    .grid-item {
-      flex-basis: 100%;
-    }
-  }
-  */
 
 .hidden {
     display: none!important;
