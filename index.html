@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - List: Nightly</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <html ng-app="ionicApp">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Ionic List Directive</title>
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons+Round" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap">
+        <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
+        <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
+    </head>
+
+    <body ng-controller="MyCtrl">
+
+        <ion-header-bar class="bar-positive">
+            <div class="buttons">
+                <button class="button button-icon icon ion-ios7-minus-outline" ng-click="data.showDelete = !data.showDelete; data.showReorder = false"></button>
+                <h1 class="title">New PodioBox UI</h1>
+            </div>
+        </ion-header-bar>
+
+        <ion-content>
+        </ion-content>
+        <ion-footer-bar ng-class="footerOpened ? 'bar-grey opened' : 'bar-grey'">
+
+
+            <div class="wrapper">
+                <div class="section">
+                    <div class="status-container">
+                        <div class="status"><span class="badge badge-assertive header-badge ">LIVE</span><span class="badge badge-balanced header-badge ">5</span></div>
+                    </div>
+                    <div class="itemz" style="text-align: center; _width:70%;">
+                        <div class="button-bar ">
+                            <button ng-click="" style="text-align:left;" class="button button-icon icon iconearancio"><i
+                  class="material-icons-round iconearancio">first_page</i></button>
+                            <button ng-click="" class="button button-icon icon iconearancio"><i
+                  class="material-icons-round iconearancio">chevron_left</i></button>
+                            <button class="button button-icon icon iconearancio"><span class="currentslide">1/22</span></button>
+                            <button ng-click="" class="button button-icon icon iconearancio"><i
+                  class="material-icons-round iconearancio">chevron_right</i></button>
+
+                        </div>
+                    </div>
+                    <div class="burger-area">
+
+                        <span id="mainNavBurger" class="burger" ng-click="toggleFooter()" ng-class="footerOpened ? 'open' : ''">
+              <span></span>
+                        <span></span>
+                        <span></span>
+                        </span>
+                    </div>
+                </div>
+
+
+
+                <div style="_display:none;" class="section1">
+                    <div class="itemy">
+                        <span class="grouptitle">Presentation</span>
+                        <ul class="list">
+                            <li class="list-item">
+                                <div class="list-content">
+                                    <i class="material-icons-round iconegrigio">refresh</i>
+                                    <p class="leggenda">Refresh</p>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-content">
+
+                                    <i class="material-icons-round iconegrigio ">present_to_all</i>
+                                    <i class="material-icons-round iconegrigio hidden">pause_presentation</i>
+                                    <p class="leggenda">Show</p>
+
+                                </div>
+                            </li>
+
+                            <li class="list-item">
+                                <div class="list-content">
+
+                                    <i class="material-icons-round iconegrigio ">stay_primary_portrait</i>
+                                    <i class="material-icons-round iconegrigio hidden">screen_lock_portrait</i>
+                                    <p class="leggenda">Confidential</p>
+
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-content">
+
+                                    <i class="material-icons-round iconegrigio ">videocam</i>
+                                    <i class="material-icons-round iconegrigio hidden">videocam_off</i>
+                                    <p class="leggenda">Camera</p>
+
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-content">
+
+                                    <i class="material-icons-round iconegrigio ">fullscreen</i>
+                                    <i class="material-icons-round iconegrigio hidden">fullscreen_exit</i>
+                                    <p class="leggenda">Projector</p>
+
+                                </div>
+                            </li>
+
+                            <li class="list-item">
+                                <div class="list-content">
+                                    <!-- 
+                  <i class="material-icons-round iconegrigio">attachment</i>
+                  <p class="leggenda">Files</p>
+                  -->
+                                </div>
+                            </li>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="itemy">
+                        <span class="grouptitle">Interaction</span>
+                        <ul class="list">
+                            <li class="list-item">
+                                <div class="list-content">
+                                    <i class="material-icons-round iconegrigio">collections</i>
+                                    <p class="leggenda">My Presentations</p>
+                                </div>
+                            </li>
+
+
+                            <li class="list-item">
+                                <div class="list-content">
+                                    <i class="material-icons-round iconegrigio">ballot</i>
+                                    <p class="leggenda">Polls</p>
+                                </div>
+                            </li>
+
+                            <li class="list-item">
+                                <div class="list-content">
+                                    <i class="material-icons-round iconegrigio">equalizer</i>
+                                    <p class="leggenda">Surveys</p>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-content">
+                                    <i class="material-icons-round iconegrigio">speaker_notes</i>
+                                    <p class="leggenda">Questions</p>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-content">
+                                    <i class="material-icons-round iconegrigio">attachment</i>
+                                    <p class="leggenda">Files</p>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-content">
+                                    <!-- 
+                              <i class="material-icons-round iconegrigio">attachment</i>
+                              <p class="leggenda">Files</p>
+                              -->
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="itemy">
+                        <span class="grouptitle">Service</span>
+                        <ul class="list">
+                            <li class="list-item">
+                                <div class="list-content">
+                                    <i class="material-icons-round iconegrigio">save</i>
+                                    <p class="leggenda">Recordings</p>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-content">
+                                    <i class="material-icons-round iconegrigio">settings</i>
+                                    <p class="leggenda">Automation</p>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-content">
+                                    <i class="material-icons-round iconegrigio">help</i>
+                                    <p class="leggenda">Tutorials</p>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-content">
+                                    <i class="material-icons-round iconegrigio">account_box</i>
+                                    <p class="leggenda">Profile</p>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-content">
+                                    <i class="material-icons-round iconegrigio">power_settings_new</i>
+                                    <p class="leggenda">Logout</p>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-content">
+                                    <!-- 
+                              <i class="material-icons-round iconegrigio">attachment</i>
+                              <p class="leggenda">Files</p>
+                              -->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </ion-footer-bar>
+    </body>
+
+    </html>
+    <!-- partial -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
